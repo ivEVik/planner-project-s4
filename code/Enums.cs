@@ -1,0 +1,19 @@
+using System;
+
+
+namespace Planner
+{
+	[Flags]
+	public enum FLAGS : ushort
+	{
+		NONE			= 0,
+		
+		REPEAT			= 0b00000001,
+		REPEAT_DAILY	= 0b00000010,
+		REPEAT_WEEKLY	= 0b00000100,
+		REPEAT_MONTHLY	= 0b00001000,
+		REPEAT_YEARLY	= 0b00010000,
+		REPEAT_CUSTOM	= 0b00100000,
+		REPEAT_UNTIL	= 0b01000000
+	}
+}
